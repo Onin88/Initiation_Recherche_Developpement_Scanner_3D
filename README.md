@@ -24,7 +24,6 @@ Dans chaque dossier correspondant à un type de scan, il y a des fichiers python
 > [!NOTE]
 > - Exemple Borderlands dataset après application de notre algorithme :
 > - Nuage de points 3D colorié grâce à notre algorithme appliqué à un DataSet Borderlands (contenant des images et quelques données matérielles).
-
 ![](https://raw.githubusercontent.com/Boubix88/Initiation_Recherche_Scanner_3D/master/Resultats/borderlands_result.png)
 
 > [!NOTE]
