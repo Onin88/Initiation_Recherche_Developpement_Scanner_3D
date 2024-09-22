@@ -32,9 +32,8 @@ Dans chaque dossier correspondant à un type de scan, il y a des fichiers python
 
 > [!NOTE]
 > Exemple d'un nuage de points colorié capturé grâce à la technologie ZED 2 :
-Exemple ZED 2
 ![](https://raw.githubusercontent.com/Boubix88/Initiation_Recherche_Scanner_3D/master/Resultats/zed2_result.png)
 
 > [!NOTE]
-> Exemple d'un nuage de points colorié capturé grâce à la technologie Lidar:
+> Exemple d'un nuage de points colorié capturé grâce à la technologie Lidar :
 ![](https://raw.githubusercontent.com/Boubix88/Initiation_Recherche_Scanner_3D/master/Resultats/kitti_result.png)
