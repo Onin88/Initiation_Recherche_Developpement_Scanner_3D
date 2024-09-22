@@ -1,0 +1,101 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{fancyhdr} % Pour personnaliser les en-têtes et les pieds de page
+\usepackage{hyperref} % Include the hyperref package
+\usepackage{titlesec} % Pour les titres en section
+\usepackage{mathptmx} % Times New Roman font
+\usepackage{setspace} % Interline spacing
+\usepackage{sectsty} % Section styles
+\usepackage[backend=biber]{biblatex} %Imports biblatex package
+\usepackage{titletoc} % Personalize table of contents
+\usepackage{tabularx} % Pour l'environnement tabularx
+\usepackage{geometry} % Pour définir les marges
+\usepackage{colortbl} % Pour colorer les cases de tableau
+
+% Définition d'une couleur
+\definecolor{lightgray}{rgb}{0.8, 0.8, 0.8}
+
+% Définition du fichier de bibliographie
+\addbibresource{bibliographie.bib} %Import the bibliography file
+
+% Définition de la commande \subsubsubsection
+\titleclass{\subsubsubsection}{straight}[\subsection]
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand{\thesubsubsubsection}{\thesubsubsection.\arabic{subsubsubsection}}
+\titleformat{\subsubsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+% Définir les marges
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry} % Marges
+
+% Définir le style de la page avec fancyhdr
+\pagestyle{fancy}
+\fancyhf{} % Effacer les en-têtes et les pieds de page existants
+
+% Définir l'en-tête
+\fancyhead[L]{\includegraphics[height=2cm]{images/univ_lorraine.png}\hspace{0.5cm}\includegraphics[width=4cm]{images/fst_logo.jpg}} % Image à gauche de l'en-tête
+
+% Supprimer l'alinéa par défaut
+\setlength{\parindent}{0pt}
+
+%===================================================================================================%
+
+% Début du rapport
+\begin{document}
+
+
+% Page 1
+\input{1_couverture}
+
+% Page 2
+\input{2_page_blanche}
+
+% Page 3
+\input{3_decharge}
+
+% Page 4
+\input{4_remerciements}
+
+% Page 5
+\input{5_sommaire}
+
+% Page 6
+\input{6_introduction}
+
+% Page 7
+\input{7_developpement}
+
+% Page 8
+\input{8_conclusion}
+
+% Page 9
+\input{9_annexes}
+
+% Page 10
+\input{10_bibliographie}
+
+% Page 11
+\input{11_gloassaire}
+
+% Page 12
+\input{12_declaration_plagiat}
+
+% Page 13
+\input{13_page_blanche}
+
+% Page 14
+\input{14_quatrieme_couverture}
+
+% Fin du rapport
+\end{document}
+
+%\Huge: Environ 24.88 pt
+\huge: Environ 20.74 pt
+\LARGE: Environ 17.28 pt
+\Large: Environ 14.4 pt
+\large: Environ 12 pt
+\normalsize: Dépend de la classe de document, souvent 10 pt dans les documents de base
+\small: Environ 9 pt
+\footnotesize: Environ 8 pt
+\scriptsize: Environ 7 pt
+\tiny: Environ 5 pt%

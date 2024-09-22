@@ -1,0 +1,337 @@
+% Page 7
+\pagestyle{empty} % Supprimer l'en-tête et le pied de page
+\begin{center}
+    \section{\huge\textbf{{DEVELOPPEMENT}}}
+\end{center}
+
+
+\subsection{Etude Bibliographique}
+    \subsubsection{Techniques de scan 3D}
+        \normalsize{
+        \setlength{\parindent}{1cm} % Définir l'alinéa à 1cm à l'intérieur du groupe
+            Le choix des Techniques de scan 3D constitue une étape primaire dans le développement de notre système de capture de nuages de points colorés. Cette section vise à explorer les différentes méthodes disponibles, en mettant l'accent sur leur pertinence par rapport à notre projet.
+        }
+
+        \subsubsubsection{Scanner 3D à lumière structurée}
+            \normalsize{
+             \setlength{\parindent}{1cm} % Définir l'alinéa à 1cm à l'intérieur du groupe
+                Le scanner 3D à lumière structurée \cite{lumiere_structuree} est une méthode courante de capture de données 3D, qui utilise une lumière projetée sous forme de motif sur la surface de l'objet que l'on souhaite numériser. La déformation de ce motif est ensuite analysée par des capteurs pour calculer les coordonnées tridimensionnelles des points de la surface. Cette technique nous offre une précision accrue, mais peut être limitée par la complexité des formes à numériser et les contraintes environnementales liées à l'utilisation du laser. Cette technique peut être utilisé en temps réel ce qui fait d'elle une candidate potentiel à notre projet.
+            }
+
+        \subsubsubsection{Stéréoscopie}
+            \normalsize{  
+            \setlength{\parindent}{1cm} % Définir l'alinéa à 1cm à l'intérieur du groupe
+                La stéréoscopie$^2$ \cite{stereovision} est une approche qui repose sur la capture d'images à partir de plusieurs points de vue pour reconstruire la géométrie tridimensionnelle d'un objet. En comparant les disparités entre les images, il est possible de calculer la profondeur des points de la scène. Cette méthode présente l'avantage de ne pas nécessiter l'utilisation de lasers, mais peut être sensible aux variations d'aclairages et aux occlusions. Nos yeux sont des outils qui utilisent cette technique de perception. Cette technique peut être utilisé en temps réel, elle est souvent utilisée dans la numérisation 3D, la conception assisté par Ordinateur, la réalité augmentée et la robotique, des domaines qui collent parfaitement à notre projet.
+            }
+
+        \subsubsubsection{Balayage Laser}
+            \normalsize{
+                Le balayage laser \cite{balayage_laser} est une technique de scan 3D qui implique l'utilisation d'un laser pour balayer la surface de l'objet à numériser. En mesurant le temps mis par le laser pour rebondir sur la surface et revenir au capteur, il est possible de calculer la distance entre le scanner et chaque point de la surface. Cette méthode est rapide et précise, mais peut être coûteuse et sensible aux matériaux réfléchissants. Cette technique peut être utilisé en temps réel, elle est souvent utilisée dans les domaines, d'ingénierie, d'architecture, d'archéologie et de BTP. Ce qui fait d'elle une redoutable concurrente par son utilisation courante et donc plus approfondie.
+            }
+            \\ \\
+            \normalsize{
+                Toutes ces techniques sont des pistes intéressantes à explorer, nous allons donc utiliser, étudier et comparer trois différents outils technologiques qui possèdent chacun leur spécifité, chacun aura une des techniques de scan 3D presentées auparavant.
+            }
+        
+    \subsubsection{Coloriage de points 3D}
+        \normalsize{
+            L'intégration de la couleur dans les nuages de points 3D est une étape cruciale pour notre projet de développement d'un scanner 3D dense avec couleurs. Cette section se concentre sur les différentes techniques de coloriage des nuages de points tridimensionnels, en mettant en lumière leurs avantages et leurs limitations.
+        }
+        \\ \\
+        \normalsize{
+            L'acquisition de couleur dans les nuages de point peut être réalisée de plusieurs manières. La plus courante convient d'utiliser une caméra couleur qui est synchronisée avec le Scanner 3D ce qui permettra d'avoir toutes les informations par rapport aux deux outils, en plus du système NAPS qui nous donne accès à la position en temps réel des outils dans le monde. Toutes ces données nous permettent de faire des calculs grâce à des matrices pour passser du repère 3D au repère de la caméra dans le but de coller chaque points du nuage sur l'image colorée pour ensuite pouvoir récupérer la couleur du pixel correspondante au point puis lui appliquer cette couleur. Suite à cela nous pouvons récupérer le nuage de points coloré en 3D.
+        }   
+        
+    \subsubsection{Mise en place d'emploi du temps}
+        \normalsize{
+            La gestion et la mise  en place de notre emploi du temps est l'une des étapes les plus importantes pour assurer la progression efficace de notre projet de développement du scanner 3D dense avec couleurs. Cette section détaille l'organisation de nos séances de travails et de nos rencontres avec nos encadrants.
+        }
+        \\ \\
+        \normalsize{
+            Nous avons planifié nos séances de travail au Techlab, où nous nous sommes réunis une à deux fois par semaine, soit le matin, soit l'après-midi, en fonction de nos disponibilités et des contraintes de notre emploi du temps respectif. Pendant ces séances, nous avons travaillé sur différents aspects du projet, utilisant tantôt les ordinateurs mis à notre disposition au Techlab, tantôt nos propres ordinateurs, ou encore les équipements spécifiques tels que les jetsons fournies par A. Saint-Jore.
+        }
+        \\ \\
+        \normalsize{
+            En plus de nos séances de travail régulières, nous avons eu l'occasion de rencontrer notre encadrant principal, S. Contassot-Vivier, toutes les deux semaines environ. Ces rencontres étaient des moments clés pour discuter de l'avancement du projet, pour nous donner des pistes plus intéressantes à explorer, pour partager nos résultats, nos difficultés, et bénéficer de son expertise. Ces réunions s'effectuaient le plus souvent au Loria.
+        }
+        \\ \\
+        \normalsize{
+            Par ailleurs, lors de nos visites au Techlab, nous avons régulièrement croisé A. Saint-Jore, qui nous a apporté un soutien précieux en nous guidant dans l'utilisation des équipements et en répondant à nos questions techniques. Il était aussi présent lors de certaines réunions pour faire le point.
+        }
+        \\ \\
+        \normalsize{
+            L'organisation rigoureuse de notre emploi du temps, combinée à nos interactions régulières avec nos encadrants, a favorisé une avancée fluide et efficace de notre projet, nous permettant de relever les défis techniques avec confiance et de progresser vers la réalisation de nos objectifs.
+        }
+
+
+\subsection{Mise en place du montage expérimental}
+    \subsubsection{Installation}
+        \normalsize{
+            Nos encadrants et le Techlab nous ont donc fourni le matériel nécessaires pour réaliser à bien notre projet, cela comprend la caméra Zed2, le Lidar Velodyne Puck Lite etune Jetson. La caméra Zed2 est une caméra composée de deux caméras RGB, celle-ci nous offre une résolution allant jusqu'à 2K, permettant une capture d'images de haute qualité. Elle est dotée de fonctionnalités telles que le contrôle de la caméra, le suivi de position et la détection d'objets. Le Lidar Velodyne Puck Lite utilise des lasers pour une gestion précise de la distance, avec une vitesse de rotation ajustable. Enfin, la Jetson nous offre un ordinateur embarqué qui est prévu d'être implenté dans le robot chien.
+        }
+        \\ \\
+        \normalsize{
+            Nous avons entamé la phase d'installation en configurant la caméra Zed2 comme premier dispositif de capture. Étant donné les exigences techniques requises, notamment la nécessité d'une carte graphique Nvidia GTX 1060 au minimum, nous avons dû recourir à l'utilisation de nos propres ordinateurs personnels. L'un de nos deux ordinateurs répondait à ces critères, ce qui nous a conduit à choisir cet équipement pour procéder à l'installation. Cependant, étant donné que cet ordinateur fonctionnait sous le système d'exploitation Windows, cela a entraîné une procédure d'installation différente et plus complexe.
+        }
+        \\ \\
+        \normalsize{
+            En ce qui concerne la Kinect v1 et le Velodyne 3D (Lidar), nous avons installé tous les logiciels requis sur nos ordinateurs personnels. Ceux-ci contenant les spécifications adéquates, Windows ne posant aucun problème, nous avons réussi à installer sans problème pour le Lidar le logiciel LidarView \cite{lidarview} et Skanect \cite{skanect} pour la Kinect v1.
+        }
+        \\ \\
+        \normalsize{
+            Dans le cadre de l'installation, nous avons téléchargé et configuré plusieurs logiciels et bibliothèques nécessaires, notamment le SDK de la Zed, le SDK d'OpenCV, CUDA, ainsi que des modules Python requis pour le développement ultérieur. Malgré nos efforts, certaines installations, telles que ROS2, ont rencontré des difficultés. Malgré les heures passées à chercher la solution avec l'aide de notre encadrant A. Saint-Jore, nous n'avons pas réussi à installer ROS2. Face à ces problèmes persistants, A. Saint-Jore nous a prêté sa Jetson équipée d'Ubuntu 18 et d'une carte graphique nvidia requise et de 4GB de ram, répondant ainsi aux exigences matérielles nécessaires et offrant une compatibilité adéquate pour nos expériences.
+        }
+    
+    \subsubsection{Configuration des équipements}
+        \normalsize{
+            Une fois la Jetson mise à notre disposition, nous avons configuré l'environnement de développement en utilisant les ressources du Techlab tels que leurs écrans. Cette étape a impliqué l'installation de ROS2 sur la Jetson, une tâche qui s'est révélée complexe en raison de certaines incompatibilités avec Ubuntu 18. Après avoir identifié la source du problème, nous avons opté pour une version antérieure de ROS2, résolvant ainsi les problèmes de compatibilité et permettant la poursuite de nos expériences.
+        }
+    
+    \subsubsection{Choix de configuration et d'installation}
+        \normalsize{
+            Suite à ces démarches, nous avons expérimenté avec succès le tutoriel Turtlesim et ROS2 humble \cite{turtle_sim_ros2}, nous familiarisant ainsi avec les principaux concepts de ROS2 tels que les Nodes, les Topics, les Services, et les Paramètres Serveur. Cependant, malgré cette avancée, nous avons rencontré des limitations matérielles avec la Jetson, notamment en termes de mémoire vive insuffisante, ce qui a entravé la génération de nuages de points.
+        }
+        \\ \\
+        \normalsize{
+            En effet, un prérequis nous manquait au début mais nous est apparu par la suite, 8GB de ram sont nécessaires au minimum pour permettre à la caméra Zed2 de fonctionner correctement et de générer un nuage de points 3D, ce qui est le double de la jetson.
+        }
+        \\ \\
+        \normalsize{
+            En consultation avec nos encadrants, nous avons donc convenu de ne pas poursuivre l'utilisation de ROS2 en raison de ces contraintes matérielles. Néanmoins, cette décision ne nous a pas découragée, car nous avons identifié d'autres possibilités d'utilisation, notamment pour la Zed2, qui peut être utilisé sans ROS2, ce qui nous permet d'avancer dans notre projet avec cet outil.
+        }
+
+\subsection{Caméra Zed2}
+
+    \normalsize{
+        Sur la caméra Zed2, nous avons effectué un panel de tests, allant d'un simple tutoriel \cite{zed_sdk} de découverte de cet outil jusqu'au détail le concernant. Nous avons testé le control de la caméra, la profondeur, le suivi de position, la détection d'objets, le suivi du corps ainsi que l'enregistrement et la génération d'un nuage de points 3D.
+    }
+
+    \subsubsection{Evaluation des résultats}
+        \subsubsubsection{Qualité des Images et de la Profondeur}
+        \normalsize{
+            Lors de nos tests répétés avec la ZED2, nous avons observé une gamme de qualité d'image, allant de médiocre jusqu'à une résolution de 2K, offrant ainsi une variation notable dans la clarté et la netteté des images capturées. Les images de qualité supérieure à 2K ont particulièrement retenu notre attention pour leur excellente qualité visuelle.
+        }
+        \\ \\
+        \normalsize{
+            En ce qui concerne la profondeur, nos tests ont révélé des données de profondeur cohérentes et fiables. Les informations de profondeur fournies par la ZED2 semblaient conformes à nos attentes et ont fournies une base solide pour nos expériences ultérieures.
+        }
+        \\ \\
+        \normalsize{
+            Sur la base de ces observations, nous avons jugé que la ZED2 présentait des performances acceptables en termes de qualité d'image et de précision de profondeur, ce qui nous a encouragé à poursuivre nos expérimentations, notamment dans la génération de nuages de points.
+        }
+
+        \subsubsubsection{Précision du nuage de points}
+        \normalsize{
+            Pour générer le nuage de points tant attendu, nous avons utilisé un code flexible qui nous permet de modifier plusieurs paramètres pour nous adapter à notre matériel ou à nos besoins spécifiques. Parmi ces paramètres, le DEPTH MODE joue un rôle crucial. Il offre une gamme d'options, allant de NONE à PERFORMANCE, QUALITY, ULTRA, et NEURAL. Le choix du mode de profondeur affecte directement la qualité et la précision du nuage de points généré.
+        }
+        \\ \\
+        \normalsize{
+            Le DEPTH MODE détermine la façon dont la ZED2 traite les données de profondeur capturées par ses capteurs. Par exemple, les modes PERFORMANCE et QUALITY peuvent être utilisés pour ajuster la qualité de la profondeur en fonction des exigences de performance du système ou des besoins de qualité d'image. Les modes ULTRA et NEURAL fournissent des niveaux de détail et de précision encore plus élevés, mais peuvent nécessiter plus de ressources matérielles.
+        }
+        \\ \\
+        \normalsize{
+            Un autre paramètre crucial est 'camera resolution', qui offre des options telles que VGA, HD720, HD1080 et HD2K. Cette capacité à capturer des images de haute qualité influe directement sur la qualité du nuage de points généré. Des images plus nettes et détaillées se traduiront par un nuage de points plus précis et fidèle à la réalité.
+        }
+        \\ \\
+        \normalsize{
+            Suite à la génération des nuages de points, même en qualité maximale, ceux-ci présentaient des imperfections, même avec un nombre élevé de frames. Les murs, le sol et le plafond ne sont pas plats et présentent des irrégularités. Malgré cela, nous avons pu reconnaître en globalité la pièce scannée.
+        }
+        
+        \subsubsubsection{Performance Temporelle}
+            \normalsize{
+                La performance temporelle de la ZED2 dépend étroitement des deux paramètres principaux mentionnés précédemment, ainsi que du nombre de frames utilisées. En réglant tous les paramètres au minimum avec 80 frames, le temps de traitement est d'environ 2 secondes, en plus du temps nécessaire pour capturer les frames. La reconstruction est généralement satisfaisante, bien que des irrégularités significatives persistent souvent sur les surfaces lisses. Il est important de noter que cette reconstruction est effectuée sans traitement de couleur pour le nuage de points.
+            }
+            \\ \\
+            \normalsize{
+                En revanche, en augmentant la qualité des paramètres, le temps de post-traitement$^4$ du nuage de points peut considérablement augmenter. Par exemple, avec une qualité élevée, le temps de post-traitement peut facilement atteindre les 30 secondes, ce qui devient assez long pour des applications nécessitant des résultats rapides.
+            }
+
+        \subsubsubsection{Robustesse et fiabilité}
+            \normalsize{
+                La ZED2 présente une robustesse$^8$ et une fiabilité notables, bien qu'elle puisse rencontrer des défis dans des environnements extrêmes tels que des grottes où la lumière peut être limitée voire inexistante. Son fonctionnement repose sur deux caméras stéréoscopiques qui captent les images et calculent la profondeur en utilisant la disparité entre les images gauche et droite.
+            }
+            \\ \\
+            \normalsize{
+                Dans des environnements sombres comme des grottes, la ZED2 peut rencontrer des difficultés en raison du manque de lumière. Bien qu'elle soit équipée de ses propres sources de lumière infrarouge pour aider à la détection de la profondeur dans des conditions de faible luminosité, une source de lumière externe peut être nécessaire pour améliorer la qualité des images et des données de profondeur. La fiabilité de la ZED2 dans de telles conditions dépendra donc de la disponibilité de cette lumière externe et de sa capacité à compenser le manque de luminosité naturelle.
+            }
+            \\ \\
+            \normalsize{
+                En termes de robustesse, la ZED2 est conçue pour être utilisée dans une variété de conditions, mais elle peut être sensible aux chocs et aux vibrations excessives, ce qui pourrait affecter sa précision et sa performance. Cette sensibilité est particulièrement pertinente dans le contexte où la caméra est montée sur un chien robot, car elle sera exposée à des vibrations et des mouvements constants pendant son utilisation. Cependant, avec les précautions appropriées et une manipulation soigneuse, la ZED2 peut offrir une fiabilité satisfaisante même dans des environnements difficiles comme des grottes.
+            }
+
+\subsection{Kinect v1}
+
+    \subsubsection{Evaluation des résultats}
+    
+        \subsubsubsection{Qualité des Images et de la Profondeur}
+            \normalsize{
+                La Kinect datant d'une quinzaine d'années ne permet pas d'obtenir des images de bonne définition, en effet elle ne propose qu'une définition maximum de 480p. Mais si on observe les images obtenues, on peut remarquer que la qualité reste tout de même correct et que le résultat est largement exploitable.
+            }
+            \\ \\
+            \normalsize{
+                Pour ce qui est de la profondeur, nous avons obtenu des résultats plutôt corrects où l'on distingue bien les objets selon la distance.
+            }
+            \\ \\
+            \normalsize{
+                Selon ces observations, nous pouvons affirmer que la Kinect permet une bonne visualisation du monde qui l'entoure et c'est pourquoi nous avons décidé d'aller plus loin en capturant des nuages de points.
+            }
+        
+        \subsubsubsection{Précision du nuage de points}
+
+            \normalsize{
+                En ce qui concerne la capture de nuage de points, nous avons décidé d'utiliser le logiciel Skanect sous Windows. Ce logiciel permet de capturer un nuage de points et de le colorer avec diffrentes qualités. Nous pouvons aussi voir en direct un aperçu 3D coloré de l'image actuelle.
+            }
+            \\ \\
+            \normalsize{
+                L'option de reconstruction permet de fusionner chaque nuage de points de chaque frame en un nuage de points complet selon un réglage de qualité allant de LOW à VERY HIGH en passant par MEDIUM et HIGH. Ce paramètre permet d'ajuster la finesse du nuage, c'est à dire la densité$^1$ de points.
+            }
+            \\ \\
+            \normalsize{
+                Nous disposons aussi d'une option pour colorier le nuage de points, avec un paramètre de résolution allant de 1 à 20 mm, ainsi que d'autres réglages. Tout cela permet d'obtenir en sortie un nuage de points où chaque point s'est vu attribué une couleur obtenu par l'intermédiaire de la caméra integrée.
+            }
+            \\ \\
+            \normalsize{
+                Les nuages de points obtenus par ce logiciel sont assez convaincants, la précision est assez correcte malgré quelques aspérités. On peut noter que la représentation des couleurs est assez fidèle à la réalité mais un peu floue dû à la résolution de la caméra.
+            }
+        
+        \subsubsubsection{Performance Temporelle}
+            \normalsize{
+                La performance dépend énormement des spécifications de la machine qui exécute Skanect. En effet, la capture des données peut facilement atteindre 60 frames/s, mais à l'étape suivante, c'est-à-dire la fusion, cela peut prendre plus ou moins de temps selon la machine, allant de quelques secondes avec une qualité de fusion basse et un modèle basique jusqu'à plusieurs minutes avec un modèle complexe et une haute qualité pour la fusion.
+            }
+            \\ \\
+            \normalsize{
+                En plus de la fusion qui peut prendre un certain temps, en choisissant de colorier le nuage de points après, le logiciel reparcourt une fois de plus la capture pour appliquer la couleur aux points et selon la résolution choisie, le temps de calcul peut s'avérer un peu long tout comme la fusion.
+            }
+
+            
+        \subsubsubsection{Robustesse et fiabilité}
+            \normalsize{
+                La Kinect est un capteur plutôt efficace dans les environnements fermés, quelque soit la lumière et même à l'inverse dans un noir le plus total. Cela est du au fait que la Kinect fonctionne avec une lumière structurée emise elle-même par la Kinect. Les espaces restreints ne sont pas un problème pour ce capteur puisque la distance minimale de capture est de quelques dizaines de cm.
+            }
+            \\ \\
+            \normalsize{
+                Nous pouvons aussi admirer le fait que la Kinect fonctionne en exterieur malgré qu'avec le soleil qui est une source très importante de lumière peut perturber la lumière structurée émise. Ainsi les nuages de points obtenus peuvent contenir plus d'imprécisions qu'en intérieur. Cela dit la Kinect fonctionne tout de même sans soucis et permet de capturer des données sur plusieurs mètres de distance.
+            }
+
+
+\subsection{Velodyne Puck Lite}
+    \subsubsection{Evaluation des résultats}
+        \subsubsubsection{Qualité de la Profondeur}
+            \normalsize{
+                Les tests effectués ont révelés que la gestion de la distance est de très bonne qualité, cela est logique lorsque l'on sait que le lidar fonctionne avec des lasers.
+            }
+        
+        \subsubsubsection{Précision du nuage de points}
+            \normalsize{
+                Concernant la génération de nuage de points, nous avons utilisé le logiciel LidarView qui permet de récupérer les paquets reseaux envoyés par le lidar sous forme de fichier '.PCAP'. LidarView permet aussi de visualiser en direct le nuage de points actuel capturé par le lidar. Pour finir nous pouvons exporter les points dans un fichier '.ply' par exemple.
+            }
+            \\ \\
+            \normalsize{
+                Les nuages de points obtenus par le lidar sont très précis, en effet horizontalement l'angle entre les faisceaux des lasers n'est que de 0,1° ce qui permet une grande densité de points. Verticalement le lidar se révèle moins précis avec un angle de 2° entre chaque faisceau mais si l'on fait bouger le lidar verticalement on peut capturer plus de points et combler les espaces vides verticalement.
+            }
+            \\ \\
+            \normalsize{
+                De plus, le Puck Lite permet de capturer environ 600 000 points à la seconde, renvoyant donc des nuages de points très précis et denses.
+            }
+
+        \subsubsubsection{Performance Temporelle}
+            \normalsize{
+                La performance du lidar en terme de temps ne dépend que d'une chose, sa vitesse de rotation. En effet il peut tourner à une vitesse allant de 300 tours/min à 1200 tours/min. Combiné aux 600 000 points capturables par seconde, cela fait donc du lidar une solution très efficace en matière de temps si l'on ne compte pas le post-traitement des nuages de points.
+            }
+        
+        \subsubsubsection{Robustesse et fiabilité}
+            \normalsize{
+                Le lidar est sûrement l'une des méthodes les plus fiables et robustes pour la capture de points en 3D. Cela se justifie par l'utilisation de lasers, 16 lasers plus précisement. Le calul de distance de chaque faisceau$^5$ est d'une grande précision.
+            }
+            \\ \\
+            \normalsize{
+                En plus de ceci, le lidar s'adapte à tous les environnements, que ce soit en intérieur comme en extérieur. Les faisceaux ne sont pas perturbés par la lumière du soleil par exemple. Le seul soucis pourrait être qu'un faisceau qui passe à travers une vitre par exemple ne soit pas réfléchit correctement et conduise donc à une perte de points.
+            }
+            \\ \\
+            \normalsize{
+                Enfin, le Puck Lite dispose d'un rayon d'action exemplaire avec une rotation à 360° horizontalement et 30° verticalement. Rajoutons à cela le fait qu'il puisse envoyer des faisceaux à une centaine de mètres de distance et nous avons un moyen fiable et robuste pour capturer des nuages de points.
+            }
+
+\subsection{Expérimentations sur des données réelles}
+    \subsubsection{Explications}
+        \normalsize{
+            Suite à nos recherches et à l'évaluation des différentes technologies disponibles, nous avons décidé de nous concentrer sur notre objectif principal : colorier un nuage de points 3D à partir d'un flux d'images. L'un des défis majeurs est de disposer de données de flux d'images ainsi que des informations sur le positionnement de la caméra dans le monde, une tâche complexe sans accès à NAPS. Nous avons décidé avec S. Contassot-Vivier de recourir à des ensembles de données, notamment ceux disponibles sur KITTI \cite{kitti_dataset}. Pour faciliter la manipulation de ces données, nous avons installé Pikitty \cite{kitti_pykitti}, un ensemble de scripts Python spécialement conçu pour le traitement des données KITTI, largement utilisé dans la recherche en vision par ordinateur. Pikitty nous permet d'accéder facilement aux images ainsi qu'aux informations de calibrage de la caméra, des éléments cruciaux pour notre projet. Numpy a aussi été installé pour pouvoir effectuer des calculs matriciels. En exploitant ces données, nous pouvons désormais développer et tester nos algorithmes de coloration avec des données réelles, ce qui nous rapproche fortement de notre but.
+        }
+
+    \subsubsection{Réalisations}
+        \normalsize{
+            À partir de cet ensemble de données complet comprenant les informations de la caméra ainsi que les images correspondantes, nous avons développé un code capable de récupérer des fichiers '.bin' contenant le nuage de points 3D de chaque image. Nous obtenons ainsi une array de points pour chaque image. En parallèle, nous récupérons les données de calibration$^3$ de la caméra ainsi que les données du Velodyne, et nous extrayons les images correspondantes à chaque frame.
+        }
+        \\ \\
+        \normalsize{
+            Ensuite, nous utilisons la matrice de projection$^6$ de la caméra, la matrice de réctification et la matrice de transformation du Velodyne à l'image pour effectuer une conversion des points du repère 3D au repère de la caméra. Cette opération implique un calcul matriciel$^7$ expliqué par une revue scientifique \cite{Geiger2013IJRR} en utilisant les produits matriciels de numpy comme suit :
+        }
+        \\ \\
+        \normalsize{
+            PointsRepereCamera = MatriceProjectionCamera @ MatriceRectification @ MatriceTransformation @ PointsVelodyne
+        }
+        \\ \\
+        \normalsize{
+            Une fois que nous avons réussi à obtenir le nuage de points 3D dans le repère de la caméra, nous sélectionnons les points les plus proches de la caméra, en privilégiant le point le plus proche en cas de superposition de points grâce à un zbuffer. Ensuite, nous colorions chaque point en utilisant la couleur du pixel correspondant dans l'image.
+        }
+        \\ \\
+        \normalsize{
+            Enfin, nous affichons les résultats obtenus et récupérons ainsi un nuage de points 3D colorié, résultant de notre processus de traitement et de coloration des données.
+        }
+
+    \subsubsection{Analyse}
+        \normalsize{
+            En analysant notre travail, nous constatons que la récupération du nuage de points 3D colorié a été un succès, ce qui nous permet d'obtenir une représentation tridimensionnelle colorée de notre scène.
+        }
+        \\ \\
+        \normalsize{
+            De plus, nous notons que le processus de traitement des données s'est avéré être très rapide, ce qui est un aspect positif en termes d'efficacité et de faisabilité de notre approche. Cela témoigne de l'efficacité de notre code et de notre méthode de traitement des données
+        }
+        \\ \\
+        \normalsize{
+            Cependant, malgré ces succès, nous avons fait quelques améliorations dans notre code, puisqu'au début le nuage de points 3D ne faisait pas toute l'image mais était coupé. Grâce à une meilleure gestion des bords nous avons réussi à régler ce problème et à récupérer un nuage de points bien executé. Nous avons aussi dû faire face à un problème avec l'axe Z qui paraissait compressé.
+        }
+
+
+\subsection{Résultats}
+    \subsubsection{Comparaisons}
+        \normalsize{
+            Nous pouvons voir ici les spécifications disponibles pour chacun des 3 appareils (voir Figure \ref{tab:comparison}), lorsque l'on regarde attentivement, on remarque que la ZED est plus performante que la Kinect. Mais lors de nos expérimentations, nous avons des résultats prouvant l'inverse.
+        }
+        \\ \\
+        \normalsize{
+            En effet lorsque l'on compare un nuage de points obtenu par la ZED2 (voir Figure \ref{fig:zed2_1}) et un autre par la Kinect (voir Figure \ref{fig:kinect_1)}, on se rend compte que la Kinect produit un résultat bien plus précis, il y a moins d'imperfections contrairement à la ZED2 ou les surface planes ont plus des formes sinusoidales. En revanche si l'on regarde la coloration d'un nuage, la ZED2 (voir Figure \ref{fig:zed2_2}) se trouve être plus performante que la Kinect (voir Figure \ref{fig:kinect_2}) dû à ses caméras de bien meilleure résolution.
+        }
+        \\ \\
+        \normalsize{
+           En comparaison avec les deux méthodes précédentes, le lidar (voir Figure \ref{fig:lidar}) se distingue par une précision nettement supérieure dans la génération de nuages de points. En effet, les lignes de points sont parfaitement continues, sans présenter d'aspérités significatives.
+        }
+
+    \subsubsection{Conclusions}
+        \normalsize{
+            En termes de comparaison techniques, sur papier, la caméra zed2 est un technologie qui semble être complète, documentée, avec un accès ouvert aux données grâce à une API dévelopée. Cependant, après expérimentation, on se rend compte que les nuages de points générés par cet outil a premièrement le traitement le plus long de tous les outils, deuxièmement les nuages de points les plus irréguliers et moins complets.
+        }
+        \\ \\
+        \normalsize{
+            Contrairement à la Kinect v1 qui nous a surpris nos encadrants et nous, par sa précision. Celle-ci nous donne un nuage de points 3D très bien formé. Son temps de traitement n'est pas le plus rapide mais il faut aussi voir que c'est la première version de cet outil technologique, sortie en 2012, aujourd'hui il y'a de bien meilleures versions, beaucoup plus performant. Cette technologie reste un exploit.
+        }
+        \\ \\
+        \normalsize{
+            Pourtant, le lidar est plutôt intéressant, par sa vitesse de traitement, de captures mais aussi par son nuage de points 3D qui nous permet de reconnaître l'environnement, sans grands détails non plus.
+        }
+        
+    
+    \subsubsection{Difficultés}
+
+        \normalsize{
+            Il est normal de rencontrer diverses difficultés tout au long d'un projet, et le nôtre n'a pas fait exception. Nous avons été confrontés à une série de défis, allant des problèmes d'installation de logiciels à des difficultés matérielles, en passant par des contraintes de puissance de calcul et des incompatibilités matérielles imprévues. Changer de matériel tout en se réadaptant à cette nouvelle technologie et ses exigences propres n'a pas été facile.
+        }
+        \\ \\
+        \normalsize{
+            Une des principales difficultés a été le domaine même dans lequel nous nous sommes aventurés, qui s'est avéré être assez complexe et exigeant, surtout sans une expérience préalable significative. Naviguer dans ce territoire inconnu nous a demandé beaucoup d'apprentissage et d'adaptation rapide à de nouveaux concepts et technologies.
+        }
+        \\ \\
+        \normalsize{
+            Cependant, nous avons atteint notre but et notre binôme est fier de pouvoir conclure sur ce projet.
+        }
+\clearpage
