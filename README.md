@@ -1,7 +1,7 @@
 # Initiation_Recherche_Scanner_3D
 ### Groupe
-- BELUCHE Quentin
 - GEHIN Sandy
+- BELUCHE Quentin
 
 # Compilation
 Dans chaque dossier correspondant à un type de scan, il y a des fichiers python executables. Des modules pip sont nécessaires, à installer selon les erreurs.
