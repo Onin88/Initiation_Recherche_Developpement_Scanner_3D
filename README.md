@@ -19,7 +19,7 @@ Dans chaque dossier correspondant à un type de scan, il y a des fichiers python
 > [!NOTE]
 > - Exemple Kitti Dataset après application de notre algorithme :
 > - Nuage de points 3D colorié grâce à notre algorithme appliqué à un DataSet.
-![](https://raw.githubusercontent.com/Onin88/Initiation_Recherche_Scanner_3D/master/Resultats/kitti_result.png)
+![](https://raw.githubusercontent.com/Boubix88/Initiation_Recherche_Scanner_3D/master/Resultats/kitti_result.png)
 
 > [!NOTE]
 > - Exemple Borderlands dataset après application de notre algorithme :
